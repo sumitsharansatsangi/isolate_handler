@@ -16,13 +16,13 @@ import 'package:path_provider/path_provider.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
-  _MyAppState createState() => _MyAppState();
+  MyAppState createState() => MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class MyAppState extends State<MyApp> {
 // Let's create a new IsolateHandler instance. This is what we will use
 // to spawn isolates.
   final isolates = IsolateHandler();

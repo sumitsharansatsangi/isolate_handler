@@ -25,16 +25,16 @@ apply plugin: 'com.android.application'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-  compileSdkVersion flutter.compileSdkVersion
-
+  compileSdk 34
+  namespace "com.snarkypixel.isolate_handler_example"
   lintOptions {
     disable 'InvalidPackage'
   }
 
   defaultConfig {
     applicationId "com.snarkypixel.isolate_handler_example"
-    minSdkVersion 16
-    targetSdkVersion flutter.targetSdkVersion
+    minSdkVersion 19
+    targetSdkVersion 34
     versionCode flutterVersionCode.toInteger()
     versionName flutterVersionName
     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -49,11 +49,11 @@ android {
   }
 
   compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_8
-    targetCompatibility JavaVersion.VERSION_1_8
+    sourceCompatibility JavaVersion.VERSION_17
+    targetCompatibility JavaVersion.VERSION_17
   }
 
-  ndkVersion '21.3.6528147'
+  ndkVersion '26.2.11394342'
 }
 
 flutter {
