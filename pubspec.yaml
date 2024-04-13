@@ -3,18 +3,20 @@ description: Effortless isolates abstraction layer with support for inter-isolat
 version: 1.0.2
 homepage: https://github.com/deakjahn/isolate_handler
 documentation: https://github.com/deakjahn/isolate_handler/blob/0.2.0/README.md
+publish_to: none
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=3.3.3 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  flutter_isolate: ^2.0.3
+  flutter_isolate: 
+    git: https://github.com/sumitsharansatsangi/flutter_isolate.git
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^1.0.0
+  flutter_lints: ^3.0.02
