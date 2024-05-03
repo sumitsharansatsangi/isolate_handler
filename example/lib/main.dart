@@ -71,6 +71,7 @@ class MyAppState extends State<MyApp> {
       );
 }
 
+ @pragma('vm:entry-point')
 // This function happens in the isolate.
 void entryPoint(Map<String, dynamic> context) {
   // Calling initialize from the entry point with the context is
